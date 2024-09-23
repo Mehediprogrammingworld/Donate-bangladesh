@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <!-- daisyUI link and tailwind cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+       <div class="bg-[#F9F7F3] p-4">
+            <div class="max-w-screen-xl  mx-auto navbar justify-center ">
+                <div class="navbar-start">
+                  <button class="btn text-3xl px-6 bg-[#B4F461]">Blog</button>
+                </div>
+                <div class="navbar-center   md:inline-flex hidden">
+                   <img src="./assets/logo.png" alt="">
+                   <h2 class="text-3xl ml-3 ">Donate Bangladesh</h2>
+                </div>
+                <div class=" navbar-end ">
+                  <img class="mr-3 h-10" src="./assets/coin.png" alt="">
+                  <button id="rebens-balance" class=" text-3xl md:flex hidden ">5500 BDT</button>
+                </div>
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 w-[100px] right-3 rounded-box z-[1] mt-3  shadow lg:hidden">
+                      <div class="w-full flex items-center gap-2 ">
+                        <button class="flex items-center text-sm "><img class=" h-4  md:h-8" src="./assets/coin.png" alt="">5500 BDT</button>
+                      </div>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="text-center space-y-4">
+          <button class="btn">Donation</button>
+          <button class="btn">History</button>
+        </div>
+    </header>
+
+    <main class="mt-10">
+      <div class="card card-side bg-base-100 shadow-xl max-w-screen-xl mx-auto flex-col-reverse md:flex-row">
+        <figure>
+          <img
+            src="./assets/noakhali.png"
+            alt="Movie" />
+        </figure>
+        <div class="card-body">
+          <div class=" flex items-center border rounded w-[250px] px-2">
+            <img  class=" h-[20px] md:h-8 " src="./assets/coin.png" alt="">
+            <button id="add-balance"   class="flex items-center text-xl md:text-3xl gap-2  px-4 py-3  ">1000 BDT</button>
+            
+          </div>
+          <h2 class="card-title">New movie is released!</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+
+          <input id="donation" class="border rounded py-3 text-xl pl-5" type="text" placeholder="write Donation Amount">
+          <div class=" ">
+            <button id="donate" class="btn bg-[#B4F461] w-full">Donate Now</button>
+          </div>
+
+
+          
+        </div>
+      </div>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
