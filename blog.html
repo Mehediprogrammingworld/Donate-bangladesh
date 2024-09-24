@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog html</title>
+     <!-- daisyUI link and tailwind cdn link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="">
+        <div class="bg-[#F9F7F3] p-3">
+          <nav class="flex justify-between  gap-4 items-center mt-14 pb-10 max-w-screen-xl mx-auto ">
+            <div>
+              <a href="./index.html" class="btn text-dark1 bg-lime-400 px-6 text-lg">Home
+    
+              </a> 
+            </div>
+    
+            <div class="flex items-center justify-center gap-3">
+              <img src="./images/logo.png" alt="" />
+              <h2 class="hidden md:block text-dark1 text-2xl font-semibold">
+                Donate Bangladesh
+              </h2>
+            </div>
+            <div class="flex items-center justify-center gap-3">
+              <img src="./images/coin.png" alt="" />
+              <p class="flex gap-2 text-dark2 text-lg font-medium">
+                <img src="./assets/coin.png" alt="">
+                <span id="myAccount" class="pr-1">5500</span>BDT
+              </p>
+            </div>
+          </nav>
+        </div>
+       
+      </header>
+  
+      <main class=" max-w-screen-xl mx-auto space-y-3">
+        <h2 class="font-extrabold text-2xl">Important FAQ?</h2>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for representing HTML, XML, and other structured documents as a tree of nodes. Each node represents an element, attribute, text, or comment within the document. The DOM allows JavaScript to interact with the structure and content of a web page, enabling dynamic content and user interactions.   
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?></div>
+            <div class="collapse-content">
+              <p>There are several ways to select an element from the DOM in JavaScript:</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event Delegation is a technique in JavaScript where a single event listener is attached to a parent element, and the event is propagated up the DOM tree to its children. This allows you to handle events for multiple child elements without having to attach individual event listeners to each one.</p>
+            </div>
+          </div>
+         
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element`s atributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>There are several ways to manipulate an element's attributes and styles using the DOM in JavaScript:</p>
+            </div>
+          </div>
+      </main>
+</body>
+</html>
