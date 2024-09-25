@@ -57,7 +57,7 @@ my_modal_5.showModal()
 document.getElementById('donate1').value = '';
 })
 
-// card -3 
+// card 3 
 
 document.getElementById('donate2').addEventListener('click', function(){
     const donate = parseFloat(document.getElementById('donation2').value);
